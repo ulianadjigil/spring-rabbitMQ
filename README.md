@@ -3,7 +3,7 @@
 <img width="679" alt="Снимок экрана 2022-09-01 в 21 55 49" src="https://user-images.githubusercontent.com/85234616/187991318-1505f63f-4d88-4909-bc68-8d1d2a044d0a.png">
 
 ## Solution
-Запускаем RabbitMQ в Docker контейнере
+Запускаем RabbitMQ в Docker контейнере.
 ~ docker pull rabbitmq:3-management
 ~ docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 
