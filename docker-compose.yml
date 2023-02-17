@@ -1,0 +1,19 @@
+version: "2"
+services:
+  rabbitmq-consumer:
+    image: rabbitmq-consumer:1.2
+    ports:
+      - 9001:9001
+    depends_on:
+      - rabbitmq
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+  rabbitmq-producer:
+    image: rabbitmq-producer:1.2
+    ports:
+      - 9000:9000
+    depends_on:
+      - rabbitmq
